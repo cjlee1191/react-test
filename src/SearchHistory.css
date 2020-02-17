@@ -1,0 +1,9 @@
+.history{
+    display: inline-flex;
+    justify-content: center;
+    list-style: none;
+    font-style: italic;
+}
+.history_item{
+    margin-right: 10px;
+}

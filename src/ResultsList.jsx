@@ -6,7 +6,6 @@ class ResultsList extends React.Component {
     constructor(props) {
         super(props)
         this.state = props.state;
-        this.props = props
     }
 
     handleClick = (event) => {
@@ -19,8 +18,8 @@ class ResultsList extends React.Component {
 
             <div key={index} className="result">
                 <h1 >{item.title}</h1>
+                <p>-{item.author}</p>
                 <a href={item.url} target="_blank">Click to see article</a>
-                {/* <button value={index} source={item.recipe.source} className="button" onClick={this.handleClick} >Add to Cook Book</button> */}
             </div>
         )
 

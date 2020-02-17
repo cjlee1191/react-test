@@ -1,15 +1,15 @@
 import React from 'react'
-
+import './SearchHistory.css'
 const SearchHistory = (props) => {
 
     const history = props.searchTerms.map((item, index) =>
-        <li key={index}>{item}</li>
+        <li className='history_item' key={index}>{item}</li>
     )
+ 
     return (
-        <>
-        Search History:
-        { history }
-        </>
+        <div className='history'>   
+        {history}
+        </div>
 
     )
 }

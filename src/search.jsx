@@ -20,7 +20,7 @@ class Search extends React.Component {
 
             <form className="search-form" onSubmit={this.handleInput}>
                 <input className="search-field" placeholder='Search News' type="text" onChange={this.handleChange} />
-                <input value='Search' type="submit"></input>
+                <input className="button" value='Search' type="submit"></input>
             </form>
         )
     }
